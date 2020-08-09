@@ -49,7 +49,6 @@ client.on("cheer", (channel, userstate, message) => {
 
 	client.say(channel, `Muting nova for ${muteDuration} second${muteDuration === 1 ? '' : 's'}`);
 	muteNova(userstate.bits);
-	client.say(channel, `Finished muting nova for ${muteDuration} second${muteDuration === 1 ? '' : 's'}`);
 });
 function muteNova(bits) {
 	robot.keyToggle('control', 'down');

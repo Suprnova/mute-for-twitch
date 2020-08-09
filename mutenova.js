@@ -52,14 +52,14 @@ client.on("cheer", (channel, userstate, message) => {
 	let bitMuteDuration = userstate.bits / 2;
 
 	client.say(channel, `Muting nova for ${bitMuteDuration} second${bitMuteDuration === 1 ? '' : 's'}`);
-	let bitsTime = userstate.bits * 500
+	let bitsTime = userstate.bits * 500 // 0.5 seconds per bit
 	muteNova(bitsTime);
 });
 
 client.on("subscription", (channel, username, method, message, userstate) => {
     console.log(`subscription received`)
 	
-	let subTime = 125000;
+	let subTime = 125000; // 125 seconds per sub
 	
 	client.say(channel, `Muting nova for 125 seconds`);
 	muteNova(subTime);
@@ -69,20 +69,19 @@ var lastMuteTimeStamp = new Date();
 var outstandingMuteTime = 0; //ms
 var timer;
 
-function muteNova(bits) {
-    var bitsToMs = bits * 500; //half second / 500ms per bit
+function muteNova(time) {
     msSinceLastMute = Math.abs(Date.now() - lastMuteTimeStamp);
     lastMuteTimeStamp = Date.now();
 
     if (msSinceLastMute < outstandingMuteTime) {
         //outstanding mute time hasn't been run down yet; this means that we need to clear the old timeout and run a new one
-        outstandingMuteTime = outstandingMuteTime - msSinceLastMute + bitsToMs;
+        outstandingMuteTime = outstandingMuteTime - msSinceLastMute + time;
         console.log(`nova mute extended to ${outstandingMuteTime / 1000} seconds`);
 
         clearTimeout(timer);
     } else {
         //no outstanding mute, start a new timeout and trigger a mute
-        outstandingMuteTime = bitsToMs;
+        outstandingMuteTime = time;
 
         robot.keyToggle('control', 'down');
         robot.keyTap('home');

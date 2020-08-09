@@ -65,6 +65,24 @@ client.on("subscription", (channel, username, method, message, userstate) => {
 	muteNova(subTime);
 });
 
+client.on("subgift", (channel, username, streakMonths, recipient, methods, userstate) => {
+    console.log(`gift subscription received`)
+	
+	let giftTime = 125000; // 125 seconds per sub
+	
+	client.say(channel, `Muting nova for 125 seconds`);
+	muteNova(giftTime);
+});
+
+client.on("submysterygift", (channel, username, numbOfSubs, methods, userstate) => {
+    console.log(`mystery gift subscription received`)
+	
+	let mGiftTime = 125000; // 125 seconds per sub
+	
+	client.say(channel, `Muting nova for 125 seconds`);
+	muteNova(mGiftTime);
+});
+
 var lastMuteTimeStamp = new Date();
 var outstandingMuteTime = 0; //ms
 var timer;

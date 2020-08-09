@@ -30,6 +30,7 @@ const robot = require('robotjs');
 const opts = {
 	identity: {
 		username: 'mutenovabot',
+		//please remove this before uploading you retard
 		password: '<REDACTED>'
 	},
 	channels: [
@@ -45,23 +46,31 @@ client.on("cheer", (channel, userstate, message) => {
 	//changes between bits and bit when appropriate
 	console.log(`cheer received for ${userstate.bits} bit${userstate.bits === 1 ? '' : 's'}`);
 
-	let muteDuration = userstate.bits / 2;
+	let bitMuteDuration = userstate.bits / 2;
 
-	client.say(channel, `Muting nova for ${muteDuration} second${muteDuration === 1 ? '' : 's'}`);
-	muteNova(userstate.bits);
+	client.say(channel, `Muting nova for ${bitMuteDuration} second${bitMuteDuration === 1 ? '' : 's'}`);
+	let bitsTime = userstate.bits * 500
+	muteNova(bitsTime);
 });
-function muteNova(bits) {
+client.on("subscription", (channel, username, method, message, userstate) => {
+    console.log(`subscription received`)
+	
+	let subTime = 125000;
+	
+	client.say(channel, `Muting nova for 125 seconds`);
+	muteNova(subTime);
+});
+function muteNova(time) {
 	robot.keyToggle('control', 'down');
-	robot.keyTap('home');
+	robot.keyTap('insert');
 	robot.keyToggle('control', 'up');
 	console.log('muted nova');
-	var bitstoseconds = bits * 500;
 	setTimeout(function () {
 		robot.keyToggle('control', 'down');
-		robot.keyTap('home');
+		robot.keyTap('insert');
 		robot.keyToggle('control', 'up');
 		console.log('unmuted nova');
-	}, bitstoseconds);
+	}, time);
 
 }
 // Called every time the bot connects to Twitch chat

@@ -17,6 +17,7 @@ client.on('connected', onConnectedHandler);
 // Connect to Twitch:
 client.connect();
 client.on("cheer", (channel, userstate, message) => {
+	//changes between bits and bit when appropriate
 	console.log(`cheer received for ${userstate.bits} bit${userstate.bits === 1 ? '' : 's'}`);
 
 	let muteDuration = userstate.bits / 2;

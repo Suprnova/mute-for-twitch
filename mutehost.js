@@ -19,7 +19,7 @@ const opts = {
 		'<channel>'
 	]
 };
-
+//^^if you edit any code above this line, update README.md to reflect the accurate line number^^
 // Create a client with our options
 const client = new tmi.client(opts);
 client.on('connected', onConnectedHandler);

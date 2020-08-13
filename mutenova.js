@@ -1,28 +1,4 @@
-/* ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣧⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣧⠀⠀⠀⢰⡿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡟⡆⠀⠀⣿⡇⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠀⣿⠀⢰⣿⡇⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡄⢸⠀⢸⣿⡇⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⡇⢸⡄⠸⣿⡇⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⢸⡅⠀⣿⢠⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣥⣾⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⡿⡿⣿⣿⡿⡅⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠉⠀⠉⡙⢔⠛⣟⢋⠦⢵⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣄⠀⠀⠁⣿⣯⡥⠃⠀⢳⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⡇⠀⠀⠀⠐⠠⠊⢀⠀⢸⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⡿⠀⠀⠀⠀⠀⠈⠁⠀⠀⠘⣿⣄⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⣠⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣷⡀⠀⠀⠀
-⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣧⠀⠀
-⠀⠀⠀⡜⣭⠤⢍⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢛⢭⣗⠀
-⠀⠀⠀⠁⠈⠀⠀⣀⠝⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠠⠀⠀⠰⡅
-⠀⠀⠀⢀⠀⠀⡀⠡⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠔⠠⡕⠀
-⠀⠀⠀⠀⣿⣷⣶⠒⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠀⠀⠀⠀
-⠀⠀⠀⠀⠘⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠈⢿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠊⠉⢆⠀⠀⠀⠀
-⠀⢀⠤⠀⠀⢤⣤⣽⣿⣿⣦⣀⢀⡠⢤⡤⠄⠀⠒⠀⠁⠀⠀⠀⢘⠔⠀⠀⠀⠀
-⠀⠀⠀⡐⠈⠁⠈⠛⣛⠿⠟⠑⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠉⠑⠒⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀*/
+/* created by twitch.tv/suprnova, thanks to ItsPepperPot and Pixel-Dog on github for code edits and optimizations. */
 
 const tmi = require('tmi.js');
 const robot = require('robotjs');
@@ -30,12 +6,11 @@ const robot = require('robotjs');
 // Define configuration options
 const opts = {
 	identity: {
-		username: 'mutenovabot',
-		//please remove this before uploading you retard - lel
-		password: '<REDACTED>'
+		username: '<username>'
+		password: '<oauth token>'
 	},
 	channels: [
-		'purple_foundation'
+		'<channel>'
 	]
 };
 
@@ -51,9 +26,9 @@ client.on("cheer", (channel, userstate, message) => {
 
 	let bitMuteDuration = userstate.bits / 2;
 
-	client.say(channel, `Muting nova for ${bitMuteDuration} second${bitMuteDuration === 1 ? '' : 's'}`);
+	client.say(channel, `Muting for ${bitMuteDuration} second${bitMuteDuration === 1 ? '' : 's'}`);
 	let bitsTime = userstate.bits * 500 // 0.5 seconds per bit
-	muteNova(bitsTime);
+	muteHost(bitsTime);
 });
 
 client.on("subscription", (channel, username, method, message, userstate) => {
@@ -61,8 +36,8 @@ client.on("subscription", (channel, username, method, message, userstate) => {
 	
 	let subTime = 125000; // 125 seconds per sub
 	
-	client.say(channel, `Muting nova for 125 seconds`);
-	muteNova(subTime);
+	client.say(channel, `Muting for 125 seconds`);
+	muteHost(subTime);
 });
 
 client.on("subgift", (channel, username, streakMonths, recipient, methods, userstate) => {
@@ -70,8 +45,8 @@ client.on("subgift", (channel, username, streakMonths, recipient, methods, users
 	
 	let giftTime = 125000; // 125 seconds per sub
 	
-	client.say(channel, `Muting nova for 125 seconds`);
-	muteNova(giftTime);
+	client.say(channel, `Muting for 125 seconds`);
+	muteHost(giftTime);
 });
 
 client.on("submysterygift", (channel, username, numbOfSubs, methods, userstate) => {
@@ -79,22 +54,22 @@ client.on("submysterygift", (channel, username, numbOfSubs, methods, userstate) 
 	
 	let mGiftTime = 125000; // 125 seconds per sub
 	
-	client.say(channel, `Muting nova for 125 seconds`);
-	muteNova(mGiftTime);
+	client.say(channel, `Muting for 125 seconds`);
+	muteHost(mGiftTime);
 });
 
 var lastMuteTimeStamp = new Date();
 var outstandingMuteTime = 0; //ms
 var timer;
 
-function muteNova(time) {
+function muteHost(time) {
     msSinceLastMute = Math.abs(Date.now() - lastMuteTimeStamp);
     lastMuteTimeStamp = Date.now();
 
     if (msSinceLastMute < outstandingMuteTime) {
         //outstanding mute time hasn't been run down yet; this means that we need to clear the old timeout and run a new one
         outstandingMuteTime = outstandingMuteTime - msSinceLastMute + time;
-        console.log(`nova mute extended to ${outstandingMuteTime / 1000} seconds`);
+        console.log(`mute extended to ${outstandingMuteTime / 1000} seconds`);
 
         clearTimeout(timer);
     } else {
@@ -104,14 +79,14 @@ function muteNova(time) {
         robot.keyToggle('control', 'down');
         robot.keyTap('home');
         robot.keyToggle('control', 'up');
-        console.log(`muted nova for ${outstandingMuteTime / 1000} seconds`);
+        console.log(`muted host for ${outstandingMuteTime / 1000} seconds`);
     }
 
     timer = setTimeout(function () {
         robot.keyToggle('control', 'down');
         robot.keyTap('home');
         robot.keyToggle('control', 'up');
-        console.log('unmuted nova');
+        console.log('unmuted host');
     }, outstandingMuteTime);
 }
 

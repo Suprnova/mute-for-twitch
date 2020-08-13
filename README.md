@@ -14,5 +14,6 @@ Console application that will mute the host's mic for a certain amount of time b
   - (Optional) Change the multipliers from lines 7-9 to your desired value. These values are how many seconds a specific action will mute you for.
   
 Your text should look something like this: ![Demo](https://cdn.discordapp.com/attachments/603730493074046978/743521744127787088/uh_uh_ye.png)
+
 6. Navigate to the folder you unzipped the files to and type "node mutehost.js".
 Congrats! The bot is now up and running. You'll have to do Step 6 every time you want to have the bot go online.

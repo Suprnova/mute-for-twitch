@@ -48,7 +48,6 @@ client.on("subgift", (channel, username, streakMonths, recipient, methods, users
 	muteHost(giftSubMultiplier);
 });
 
-
 client.on("submysterygift", (channel, username, numbOfSubs, methods, userstate) => {
 	console.log(`mystery gift subscription received`)
 	client.say(channel, `Muting for ${giftSubMultiplier} seconds`);
